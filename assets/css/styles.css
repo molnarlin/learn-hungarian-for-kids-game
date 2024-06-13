@@ -25,11 +25,18 @@ html, body {
   }
 
   /*Card for categories styling*/
+  .card{
+    width: 16rem;
+  }
   .card img{
     width: 16rem;
     height: 12rem;
   }
-
+  /*dropdown styling*/
+  .dropdown{
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+  }
   /* Memory game card styling*/
   .grid-container{
     display: grid;
