@@ -5,6 +5,8 @@ html, body {
     background-color: #ffffff;
     color: rgb(1, 34, 3);
     width: max-content;
+    margin: 0;
+    padding: 0;
   }
   
   /*Navigation styling*/
