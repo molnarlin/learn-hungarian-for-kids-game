@@ -4,6 +4,7 @@ html, body {
     overflow-x: hidden;
     background-color: #ffffff;
     color: rgb(1, 34, 3);
+    width: max-content;
   }
   
   /*Navigation styling*/
