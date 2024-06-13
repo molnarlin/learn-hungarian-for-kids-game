@@ -1,2 +1,37 @@
 # learn-hungarian-for-kids-game
 This is a milestone project 2 for Code Institute and Runshaw College.
+
+# Milestone project 2
+## Purpose of the project
+### Developer and business goals
+## User stories
+## Features
+### Existing features
+## Future features
+## Typography and color scheme
+## Wireframes
+I used Balsamiq to create my wireframe, which you can check here [Link to the wireframe](Language learning app.pdf). There are wireframes for 3 different screen sizes (desktop computer, tablet, phone), and my project contains more sections, so people can scroll down to read them. I modified my wireframe a couple of times; this is the latest version. This wireframe helped me to position things and organize my content.
+## Technologies used
+* I used HTML to create the layout and the basic structure for the website.
+* CSS to style the website.
+* JavaScript to create a memory game.
+* Bootstrap to speed up the developing process and help with accessibility and responsibility. Bootstrap and CSS media queries ensure, that the layout changes appropriately across different device screen sizes.
+* I used Balsamiq for my wireframe, so I could think about the structure of my website, size the features, and see how things can work/function.
+* I used git for version control.
+* I used GitHub to save my repository and deploy my project online.
+* I used Microsoft Paint to create and edit pictures.
+## Testing
+### Code validation
+### Test cases
+### Fixed bugs
+### Supported screens and browsers
+## Deployment
+### via VS Code
+### via GitHub Pages
+1. I connected Visual Studio Code with my GitHub account.
+2. I committed and pushed all of my new code regularly to GitHub.
+3. Inside the milestone-project-1 repository I went to Settings > Pages, and I deployed from the main branch.
+4. When my site was live, I could visit it from here.
+## Credits
+* I have to say a big thank you to Runshaw College and Code Institute for guiding me and helping me with this project.
+* For inspiration I used [JavaScript Academy](https://www.youtube.com/watch?v=xWdkt6KSirw).
