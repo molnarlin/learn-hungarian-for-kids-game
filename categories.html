@@ -42,7 +42,7 @@
     <main>
       <h1></h1>
       <div class="dropdown container-fluid">
-        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <button class="btn btn-success dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
           Please select a category/Válassz egy csoportot
         </button>
         <ul class="dropdown-menu">
@@ -58,11 +58,11 @@
 
         </div>
       </div>
-    <div class="container-fluid">
-      <button class="btn btn-primary" onclick="start()">Start game</button>
-      <button class="btn btn-primary" onclick="restart()">Restart game</button>
-      <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
-        <div class="progress-bar" style="width: 0%"></div>
+    <div class="container-fluid justify-content-center">
+      <button class="btn btn-success" onclick="start()">Start game</button>
+      <button class="btn btn-success" onclick="restart()">Restart game</button>
+      <div id="myProgress">
+        <div id="myBar"></div>
       </div>
     </div>
     </main>
