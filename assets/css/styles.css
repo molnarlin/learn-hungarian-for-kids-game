@@ -18,7 +18,11 @@ html, body {
   .navbar-nav li a:hover {
       color: #25ad3c !important;
   }
-
+  /*Main content styling*/
+  .main-content{
+    padding-top: 15rem;
+    padding-bottom: 5rem;
+  }
 
   /* Memory game card styling*/
   .grid-container{
