@@ -8,7 +8,7 @@ This is a milestone project 2 for Code Institute and Runshaw College.
 ## 4. Future features
 ## 5. Typography and color scheme
 ## 6. Wireframes
-I used Balsamiq to create my wireframe, which you can check here [Link to the wireframe](Language%20learning%20app.pdf). There are wireframes for 3 different screen sizes (desktop computer, tablet, phone), and my project contains more sections, so people can scroll down to read them. I modified my wireframe a couple of times; this is the latest version. This wireframe helped me to position things and organize my content.
+I used Balsamiq to create my wireframe, which you can check here [Link to the wireframe](Language%20learning%20app.pdf). There are wireframes for 3 different screen sizes (desktop computer, tablet, phone), and a tree structure to understand, how users can navigate between the different game categories. My project has two different websites, and many different games. I modified my wireframe a couple of times; this is the latest version. This wireframe helped me to position things and organize my content.
 ## 7. Technologies used
 * I used HTML to create the layout and the basic structure for the website.
 * CSS to style the website.
@@ -28,7 +28,7 @@ I used Balsamiq to create my wireframe, which you can check here [Link to the wi
 ### 9.2. via GitHub Pages
 1. I connected Visual Studio Code with my GitHub account.
 2. I committed and pushed all of my new code regularly to GitHub.
-3. Inside the milestone-project-1 repository I went to Settings > Pages, and I deployed from the main branch.
+3. Inside this repository I went to Settings > Pages, and I deployed from the main branch.
 4. When my site was live, I could visit it from here.
 ## 10. Credits
 * I have to say a big thank you to Runshaw College and Code Institute for guiding me and helping me with this project.
