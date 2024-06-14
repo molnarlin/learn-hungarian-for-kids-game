@@ -40,7 +40,7 @@
             </nav>
           </header>
     <main>
-      <h1></h1>
+      <h1>Numbers</h1>
       <div class="dropdown container-fluid">
         <button class="btn btn-success dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
           Please select a category / Válassz egy csoportot
@@ -54,12 +54,99 @@
         </ul>
       </div>
       <div class="container-fluid">
-        <div class="grid-container">
-
+          <div class="row">
+            <div class="col-12">
+             <section class="flip-board">
+                   <div class="game-cards" data-match="one">
+                       <img class="front-face" src="assets/images/one.jpg" alt="front of card"/>
+                       <img class="back-face" src="assets/images/card-back.jpg" alt="back of card"/>
+                   </div>
+                   <div class="game-cards" data-match="one">
+                    <img class="front-face" src="assets/images/one.jpg" alt="front of card"/>
+                    <img class="back-face" src="assets/images/card-back.jpg" alt="back of card"/>
+                </div>
+            
+                <div class="game-cards" data-match="two">
+                    <img class="front-face" src="assets/images/two.jpg" alt="front of card"/>
+                    <img class="back-face" src="assets/images/card-back.jpg" alt="back of card"/>
+                </div>
+                <div class="game-cards" data-match="two">
+                    <img class="front-face" src="assets/images/two.jpg" alt="front of card"/>
+                    <img class="back-face" src="assets/images/card-back.jpg" alt="back of card"/>
+                </div>
+            
+                <div class="game-cards" data-match="three">
+                    <img class="front-face" src="assets/images/three.jpg" alt="front of card"/>
+                    <img class="back-face" src="assets/images/card-back.jpg" alt="back of card"/>
+                </div>
+                <div class="game-cards" data-match="three">
+                    <img class="front-face" src="assets/images/three.jpg" alt="front of card"/>
+                    <img class="back-face" src="assets/images/card-back.jpg" alt="back of card"/>
+                </div>
+            
+                <div class="game-cards" data-match="four">
+                    <img class="front-face" src="assets/images/four.jpg" alt="front of card"/>
+                    <img class="back-face" src="assets/images/card-back.jpg" alt="back of card"/>
+                </div>
+                <div class="game-cards" data-match="four">
+                    <img class="front-face" src="assets/images/four.jpg" alt="front of card"/>
+                    <img class="back-face" src="assets/images/card-back.jpg" alt="back of card"/>
+                </div>
+              <div class="game-cards" data-match="five">
+                    <img class="front-face" src="assets/images/five.jpg" alt="front of card"/>
+                    <img class="back-face" src="assets/images/card-back.jpg" alt="back of card"/>
+                </div>
+                <div class="game-cards" data-match="five">
+                    <img class="front-face" src="assets/images/five.jpg" alt="front of card"/>
+                    <img class="back-face" src="assets/images/card-back.jpg" alt="back of card"/>
+                </div>
+            
+                <div class="game-cards" data-match="six">
+                    <img class="front-face" src="assets/images/six.jpg" alt="front of card"/>
+                    <img class="back-face" src="assets/images/card-back.jpg" alt="back of card"/>
+                </div>
+                <div class="game-cards" data-match="six">
+                    <img class="front-face" src="assets/images/six.jpg" alt="front of card"/>
+                    <img class="back-face" src="assets/images/card-back.jpg" alt="back of card"/>
+                </div>
+              <div class="game-cards" data-match="seven">
+                    <img class="front-face" src="assets/images/seven.jpg" alt="front of card"/>
+                    <img class="back-face" src="assets/images/card-back.jpg" alt="back of card"/>
+                </div>
+                <div class="game-cards" data-match="seven">
+                    <img class="front-face" src="assets/images/seven.jpg" alt="front of card"/>
+                    <img class="back-face" src="assets/images/card-back.jpg" alt="back of card"/>
+                </div>
+                      <div class="game-cards" data-match="eight">
+                    <img class="front-face" src="assets/images/eight.jpg" alt="front of card"/>
+                    <img class="back-face" src="assets/images/card-back.jpg" alt="back of card"/>
+                </div>
+                <div class="game-cards" data-match="eight">
+                    <img class="front-face" src="assets/images/eight.jpg" alt="front of card"/>
+                    <img class="back-face" src="assets/images/card-back.jpg" alt="back of card"/>
+                </div>
+            <div class="game-cards" data-match="nine">
+                    <img class="front-face" src="assets/images/nine.jpg" alt="front of card"/>
+                    <img class="back-face" src="assets/images/card-back.jpg" alt="back of card"/>
+                </div>
+                <div class="game-cards" data-match="nine">
+                    <img class="front-face" src="assets/images/nine.jpg" alt="front of card"/>
+                    <img class="back-face" src="assets/images/card-back.jpg" alt="back of card"/>
+                </div>
+            <div class="game-cards" data-match="zero">
+                    <img class="front-face" src="assets/images/zero.jpg" />
+                    <img class="back-face" src="assets/images/card-back.jpg" />
+                </div>
+                <div class="game-cards" data-match="zero">
+                    <img class="front-face" src="assets/images/zero.jpg" />
+                    <img class="back-face" src="assets/images/card-back.jpg" />
+                </div> 
+               </section>
+             </div></div></div>
         </div>
       </div>
     <div class="container-fluid justify-content-center">
-      <button class="btn btn-success col-3" onclick="start()">Start game</button>
+      <button class="btn btn-success col-3" onclick="startGame()" id="startButton">Start game</button>
       <button class="btn btn-success col-3" onclick="restart()">Restart game</button>
       <div class="col-5 col-offset-1" id="myProgress">
         <div id="myBar"></div>

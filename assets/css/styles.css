@@ -1,11 +1,17 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 html, body {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     overflow-x: hidden;
     background-color: #ffffff;
     color: #011808;
-    margin: 0;
-    padding: 0;
+    display: flex;
+    height: 100vh;
   }
   
   /*Navigation styling*/
@@ -38,55 +44,47 @@ html, body {
     padding-bottom: 2rem;
   }
   /* Memory game card styling*/
-  .grid-container{
-    display: grid;
-    justify-content: center;
-    grid-template-columns: repeat(5, 140px);
-    grid-template-rows: repeat(3, calc(140px/ 2 * 3));
-  }
+  .flip-board{
+    width: 800px;
+    height: 800px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    perspective: 1000px;
+}
 
   .game-card{
-    height: calc(140px/ 2 * 3);
-    width: 140px;
-    border-radius: 10px;
-    background-color: #ffffff;
+     width: calc(20% - 10px);
+    height: calc(25% - 10px);
+    margin: 1px;
     position: relative;
+    transform: scale(1);
     transform-style: preserve-3d;
-    transition: all 0.5s ease-in-out;
+    transition: transform .5s;
   }
 
-  .front-image{
-    width: 60px;
-    height: 60px;
-  }
+  .game-cards:active{
+    transform: scale(.95);
+    transition: transform .2s;
+}
 
-  .game-card.flipped{
+.game-cards.flip{
     transform: rotateY(180deg);
-  }
-
-  .front, .back{
-    backface-visibility: hidden;
+}
+.front-face,
+.back-face{
+    width: 80%;
+    height: 80%;
+    padding: 1px;
     position: absolute;
-    border-radius: 10px;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-  }
-
-  .game-card .front{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transform: rotateY(180deg);
-  }
-
-  .game-card .back{
-    background-image: "../images/card-back.jpg";
-    background-position: center center;
-    background-size: cover;
+    border-radius: 5px;
+	background-color: green;
     backface-visibility: hidden;
-  }
+}
+
+.front-face{
+    transform: rotateY(180deg);
+}
 
 /*progress bar styling*/
 #myProgress{
