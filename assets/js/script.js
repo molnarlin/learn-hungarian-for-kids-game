@@ -70,12 +70,6 @@ function resetBoard(){
 
 cards.forEach(card => card.addEventListener('click', flipCard))
 
-function resetBoard(){
-    firstCard = null;
-    secondCard = null;
-    lockBoard = false;
-}
-
 function restart(){
     resetBoard();
     shuffleCards();
@@ -99,6 +93,7 @@ async function startGame(){
 }
 
 startGame();
+
 /*progress bar from W3 School*/
 
 var i = 0;
