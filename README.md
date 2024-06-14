@@ -32,4 +32,4 @@ I used Balsamiq to create my wireframe, which you can check here [Link to the wi
 4. When my site was live, I could visit it from here.
 ## 10. Credits
 * I have to say a big thank you to Runshaw College and Code Institute for guiding me and helping me with this project.
-* For inspiration I used [JavaScript Academy](https://www.youtube.com/watch?v=xWdkt6KSirw).
+* For inspiration I used [JavaScript Academy](https://www.youtube.com/watch?v=xWdkt6KSirw), and [MemoryGameJS on GitHub](https://github.com/IamPrime/MemoryGameJs).
