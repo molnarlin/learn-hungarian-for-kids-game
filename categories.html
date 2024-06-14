@@ -14,7 +14,7 @@
 <body>
     <header>
         <!--- Navbar code from Bootstrap-->
-            <nav class="navbar navbar-expand-xl bg-body-tertiary py-2 w-100 border-0 rounded-0 fs-3 position-fixed sticky-top">
+            <nav class="navbar navbar-expand-xl py-2 w-100 border-0 rounded-0 fs-3 position-fixed sticky-top">
               <div class="container-fluid">
                 <a class="navbar-brand fs-4" href="index.html"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-backpack-fill" viewBox="0 0 16 16">
                   <path d="M5 13v-3h4v.5a.5.5 0 0 0 1 0V10h1v3z"/>
@@ -59,9 +59,9 @@
         </div>
       </div>
     <div class="container-fluid justify-content-center">
-      <button class="btn btn-success" onclick="start()">Start game</button>
-      <button class="btn btn-success" onclick="restart()">Restart game</button>
-      <div id="myProgress">
+      <button class="btn btn-success col-3" onclick="start()">Start game</button>
+      <button class="btn btn-success col-3" onclick="restart()">Restart game</button>
+      <div class="col-5 col-offset-1" id="myProgress">
         <div id="myBar"></div>
       </div>
     </div>
