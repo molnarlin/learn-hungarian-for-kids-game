@@ -38,11 +38,7 @@ html, body {
     width: 16rem;
     height: 12rem;
   }
-  /*dropdown styling*/
-  .dropdown{
-    padding-top: 5rem;
-    padding-bottom: 2rem;
-  }
+  
   /* Memory game card styling*/
   .flip-board{
     width: 700px;
