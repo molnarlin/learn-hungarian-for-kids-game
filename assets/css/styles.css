@@ -13,7 +13,6 @@ body {
     overflow-x: hidden;
     background-image: radial-gradient(green 2%, white 87%, red 1%);
     color: #011808;
-    display: flex;
   }
   
   /*Navigation styling*/
@@ -24,7 +23,7 @@ body {
   }
     
   .navbar-nav li a:hover {
-      color: green !important;
+      color: green;
   }
   /*Main content styling*/
   .main-content{
@@ -42,42 +41,10 @@ body {
   }
   
   /* Memory game card styling*/
-  .flip-board{
-    width: 700px;
-    height: 700px;
-    margin: auto;
-    perspective: 1000px;
-}
-
-  .game-card{
-     width: 8rem;
-    height: 10rem;
-    margin: 1px;
-    position: relative;
-    transform: scale(1);
-    transform-style: preserve-3d;
-    transition: transform .5s;
-  }
-
-  .game-cards:active{
-    transform: scale(.95);
-    transition: transform .2s;
-}
-
-.game-cards.flip{
-    transform: rotateY(180deg);
-}
-.front-face,
-.back-face{
-    padding: 1px;
-    border-radius: 5px;
-	  background-color: green;
-    backface-visibility: hidden;
-}
-
-.front-face{
-    transform: rotateY(180deg);
-}
+  .front-face, .back-face {
+    width: 8rem;
+    height: 12rem;
+    }
 
 /*progress bar styling*/
 #myProgress{

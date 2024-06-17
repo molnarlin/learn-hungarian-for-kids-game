@@ -1,116 +1,59 @@
-const cards = document.querySelectorAll('.game-cards')
+const cards = [
+	{id: 'one', src: 'assets/images/one.jpg', audioSrc: 'assets/audio/one.m4a'},
+	{id: 'one', src: 'assets/images/one.jpg', audioSrc: 'assets/audio/one.m4a'},
+	{id: 'two', src: 'assets/images/two.jpg', audioSrc: 'assets/audio/two.m4a'},
+	{id: 'two', src: 'assets/images/two.jpg', audioSrc: 'assets/audio/two.m4a'},
+	{id: 'three', src: 'assets/images/three.jpg', audioSrc: 'assets/audio/three.m4a'},
+	{id: 'three', src: 'assets/images/three.jpg', audioSrc: 'assets/audio/three.m4a'},
+	{id: 'four', src: 'assets/images/four.jpg', audioSrc: 'assets/audio/four.m4a'},
+	{id: 'four', src: 'assets/images/four.jpg', audioSrc: 'assets/audio/four.m4a'},
+	{id: 'five', src: 'assets/images/five.jpg', audioSrc: 'assets/audio/five.m4a'},
+	{id: 'five', src: 'assets/images/five.jpg', audioSrc: 'assets/audio/five.m4a'},
+	{id: 'six', src: 'assets/images/six.jpg', audioSrc: 'assets/audio/six.m4a'},
+	{id: 'six', src: 'assets/images/six.jpg', audioSrc: 'assets/audio/six.m4a'},
+	{id: 'seven', src: 'assets/images/seven.jpg', audioSrc: 'assets/audio/seven.m4a'},
+	{id: 'seven', src: 'assets/images/seven.jpg', audioSrc: 'assets/audio/seven.m4a'},
+	{id: 'eight', src: 'assets/images/eight.jpg', audioSrc: 'assets/audio/eight.m4a'},
+	{id: 'eight', src: 'assets/images/eight.jpg', audioSrc: 'assets/audio/eight.m4a'},
+	{id: 'nine', src: 'assets/images/nine.jpg', audioSrc: 'assets/audio/nine.m4a'},
+	{id: 'nine', src: 'assets/images/nine.jpg', audioSrc: 'assets/audio/nine.m4a'},
+	{id: 'zero', src: 'assets/images/zero.jpg', audioSrc: 'assets/audio/zero.m4a'},
+	{id: 'zero', src: 'assets/images/zero.jpg', audioSrc: 'assets/audio/zero.m4a'},
+];
 
-let hasFlippedCard = false;
-let lockBoard = false;
-let firstCard, secondCard;
+cards.forEach((card)=> {
+	const cardHTML = `
+	<div class="memory-card col-1 offset-1 m-2" data-frame="image">
+	<img class="front-face d-none" src="${card.src}" alt="front of card"/>
+	<img class="back-face" src="assets/images/card-back.jpg" alt="back of card"/>
+	<audio id="${card.id}"><source src="${card.audioSrc}" type="audio/mpeg">Your browser does not support the audio element.</audio>
+	</div>
+     `;
+   document.getElementById('card-container').innerHTML += cardHTML;
+});
 
-function flipCard(){
-    if(lockBoard) return;
-    if(this === firstCard) return;
-    
-    this.classList.toggle('flip');
+//Add event listener to the cards
+document.querySelectorAll('.memory-card').forEach((card) => {
+  card.addEventListener('click', () => {
+    flipCard(card);
+   });
+});
 
-    if(!hasFlippedCard)
-    {
-        //First Card Click
-        hasFlippedCard = true
-        firstCard = this
+function flipCard(card){
+    const frontFace = card.querySelector('.front-face');
+    const backFace = card.querySelector('.back-face');
+    frontFace.classList.remove('d-none');
+    frontFace.classList.add('d-block');
+    backFace.classList.add('d-none');
+    const audio = card.querySelector('audio');
+    audio.play();
+ }
 
-        return;
-    }
-
-    //Second Card Click
-    secondCard = this
-
-    checkIfMatch()
-}
-
-function checkIfMatch(){
-
-        let isMatch = firstCard.dataset.match === secondCard.dataset.match;
-        
-        isMatch ? disableCards() : unflipCards();
-}
-
-function disableCards(){
-    firstCard.removeEventListener('click', flipCard)
-    secondCard.removeEventListener('click', flipCard)
-
-    resetBoard()
-}
-
-function unflipCards(){
-    lockBoard = true;
-    
-    setTimeout( () => {
-        firstCard.classList.remove('flip')
-        secondCard.classList.remove('flip')
-        lockBoard = false;
-        resetBoard()
-    }, 1500)
-}
-
-function resetBoard(){
-    hasFlippedCard = false;
-    lockBoard = false;
-    firstCard = null;
-    secondCard = null;
-}
-
-/**This function executes immediately after its definition
- * because it is wrapped in a parenthesis and 
- * has an extra pair of parenthesis at its end.
- */
-(function shuffle(){
-    cards.forEach(card => {
-        let randomPos = Math.floor(Math.random() * 20)
-        card.style.order = randomPos;
-    });
-})();
-
-cards.forEach(card => card.addEventListener('click', flipCard))
-
-function restart(){
-    resetBoard();
-    shuffleCards();
-    gridContainer.innerHTML = "";
-    generateCards();
-}
-
-function waitForClick(){
-    return new Promise(resolve => {
-        const element = document.getElementById("startButton");
-        const handler = () => {
-            element.removeEventListener("click", handler);
-            resolve();
-        };
-        element.addEventListener("click", handler);
-    });
-}
-
-async function startGame(){
-    await waitForClick();
-}
-
-startGame();
-
-/*progress bar from W3 School*/
-
-var i = 0;
-function move(){
-    if (i == 0){
-        i = 1;
-        var elem = document.getElementById("myBar");
-        var width = 1;
-        var id = setInterval(frame, 10);
-        function frame(){
-            if (width >= 100){
-                clearInterval(id);
-                i = 0;
-            } else {
-                width++;
-                elem.style.width = width + "%";
-            }
-        }
-    }
-}
+function play(id) {
+    var audio = document.getElementById(id);
+    if (audio.paused){
+       audio.play();
+    } else {
+       audio.pause();
+   }
+} 
