@@ -18,6 +18,8 @@ I used Balsamiq to create my wireframe, which you can check here [Link to the wi
 * I used git for version control.
 * I used GitHub to save my repository and deploy my project online.
 * I used Microsoft Paint to create and edit pictures.
+* I used my phone to record audio. (Samsung Voice recorder)
+* I used Microsoft Copilot and Blackbox AI to check my code and advice improvement. 
 ## 8. Testing
 ### 8.1. Code validation
 ### 8.2. Test cases
@@ -25,6 +27,8 @@ I used Balsamiq to create my wireframe, which you can check here [Link to the wi
 ### 8.4. Supported screens and browsers
 ## 9. Deployment
 ### 9.1. via VS Code
+1. I had some problem with VS Code to deploy my code locally, so I cloned my repository to my computer.
+2. I opened the index.html and categories.html from my computer's File Explorer. 
 ### 9.2. via GitHub Pages
 1. I connected Visual Studio Code with my GitHub account.
 2. I committed and pushed all of my new code regularly to GitHub.
