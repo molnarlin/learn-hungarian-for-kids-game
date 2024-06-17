@@ -47,14 +47,14 @@ body {
     }
 
 /*progress bar styling*/
-#myProgress{
+.progress{
   height: 20px;
   width: 50%;
   background-color: white;
 }
 
-#myBar{
-  width: 1%;
+.progress-bar{
+  width: 0%;
   height: 20px;
   background-color: green;
 }

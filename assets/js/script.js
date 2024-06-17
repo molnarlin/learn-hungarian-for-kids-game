@@ -23,6 +23,8 @@ const cards = [
 
 let flippedCards = [];
 let matchedCards = [];
+let totalCards = cards.length;
+let matchedCardsCount = 0;
 
 const shuffledCards= [...cards].sort(() => Math.random() - 0.5);
 
@@ -52,6 +54,7 @@ function flipCard(card){
     backFace.classList.add('d-none');
     const audio = card.querySelector('audio');
     audio.play();
+    updateProgressBar();
 
  // Add flipped card to the array
     flippedCards.push(card);
@@ -64,6 +67,8 @@ function flipCard(card){
              matchedCards.push(flippedCards[0]);
             matchedCards.push(flippedCards[1]);
             flippedCards = [];
+            matchedCardsCount += 2;//Update matched cards count.
+	        updateProgressBar(); //Update the progress bar.
        } else {
  // If cards don't match, wait a bit and flip them back.
             setTimeout(() => {
@@ -109,6 +114,8 @@ function resetGame(){
      
     // Shuffle the cards again
     shuffleCards();
+    matchedCardsCount = 0;
+    resetProgressBar();
     }
     
     function shuffleCards (){
@@ -135,4 +142,18 @@ function resetGame(){
         flipCard(card);
        });
     });
+    resetProgressBar()
+    }
+
+    //For the progress-bar
+    progressBar = document.querySelector('.progress-bar');
+
+    function resetProgressBar(){
+      progressBar.style.width = 0
+    };
+ 
+ 
+    function updateProgressBar() {
+        const progressPercentage = ((matchedCardsCount / totalCards) * 100);
+    progressBar.style.width = `${progressPercentage}%`;
     }
