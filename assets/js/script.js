@@ -21,7 +21,12 @@ const cards = [
 	{id: 'zero', src: 'assets/images/zero.jpg', audioSrc: 'assets/Audio/Zero.m4a'},
 ];
 
-cards.forEach((card)=> {
+let flippedCards = [];
+let matchedCards = [];
+
+const shuffledCards= [...cards].sort(() => Math.random() - 0.5);
+
+shuffledCards.forEach((card)=> {
 	const cardHTML = `
 	<div class="memory-card col-1 offset-1 m-2" data-frame="image">
 	<img class="front-face d-none" src="${card.src}" alt="front of card"/>
@@ -47,7 +52,33 @@ function flipCard(card){
     backFace.classList.add('d-none');
     const audio = card.querySelector('audio');
     audio.play();
- }
+
+ // Add flipped card to the array
+    flippedCards.push(card);
+
+ // Check if two cards are flipped
+     if (flippedCards.length === 2) {
+ //Check if the cards match.
+        if(flippedCards[0].querySelector('audio').id ===flippedCards[1].querySelector('audio').id){
+ //If cards match, add them to the flipped cards array
+             matchedCards.push(flippedCards[0]);
+            matchedCards.push(flippedCards[1]);
+            flippedCards = [];
+       } else {
+ // If cards don't match, wait a bit and flip them back.
+            setTimeout(() => {
+                flippedCards.forEach((card) => {
+                    const frontFace = card.querySelector('.front-face');
+                    const backFace = card.querySelector('.back-face');
+                    frontFace.classList.add('d-none');
+                    frontFace.classList.remove('d-block');
+                    backFace.classList.remove('d-none');
+                });
+              flippedCards = [];
+            }, 1000);
+        }
+    }
+};
 
 function play(id) {
     var audio = document.getElementById(id);
