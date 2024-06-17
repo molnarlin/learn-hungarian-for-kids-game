@@ -24,7 +24,7 @@ body {
   }
     
   .navbar-nav li a:hover {
-      color: #25ad3c !important;
+      color: green !important;
   }
   /*Main content styling*/
   .main-content{
@@ -83,11 +83,11 @@ body {
 #myProgress{
   height: 20px;
   width: 50%;
-  background-color: grey;
+  background-color: white;
 }
 
 #myBar{
   width: 1%;
   height: 20px;
-  background-color: #25ad3c;
+  background-color: green;
 }
