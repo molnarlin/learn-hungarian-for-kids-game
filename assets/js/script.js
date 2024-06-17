@@ -88,3 +88,51 @@ function play(id) {
        audio.pause();
    }
 } 
+
+
+function resetGame(){
+    //Remove and add the 'd-block' class and 'd-none' class to all of the cards front and back
+        const cards = document.querySelectorAll('.memory-card');
+    
+      cards.forEach((card) => {
+        const frontFace = card.querySelector('.front-face');
+        const backFace = card.querySelector('.back-face');
+        frontFace.classList.add('d-none');
+        frontFace.classList.remove('d-block');
+        backFace.classList.remove('d-none');
+        backFace.classList.add('d-block');
+    });
+    
+    //Reset the 'flippedCards' and 'matchedCards' arrays
+    flippedCards =[];
+    matchedCards =[];
+     
+    // Shuffle the cards again
+    shuffleCards();
+    }
+    
+    function shuffleCards (){
+    //Shuffle the cards
+    const shuffledCards= [...cards].sort(() => Math.random() - 0.5);
+    
+    //Remove all existing cards from the page
+    const cardContainer = document.getElementById('card-container');
+    cardContainer.innerHTML = '';
+    
+    //Re-render the shuffled cards on the page
+    shuffledCards.forEach((card)=> {
+        const cardHTML = `
+        <div class="memory-card col-1 offset-1 m-2" data-frame="image">
+        <img class="front-face d-none" src="${card.src}" alt="front of card"/>
+        <img class="back-face" src="assets/images/card-back.jpg" alt="back of card"/>
+        <audio id="${card.id}"><source src="${card.audioSrc}" type="audio/mpeg">Your browser does not support the audio element.</audio>
+        </div>
+         `;
+       cardContainer.innerHTML += cardHTML;
+    });
+    document.querySelectorAll('.memory-card').forEach((card) => {
+      card.addEventListener('click', () => {
+        flipCard(card);
+       });
+    });
+    }
