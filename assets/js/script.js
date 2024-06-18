@@ -158,4 +158,4 @@ function resetGame(){
     progressBar.style.width = `${progressPercentage}%`;
     };
 
-    export {flipCard, cards};
+    module.exports = {flipCard, cards, matchedCards};

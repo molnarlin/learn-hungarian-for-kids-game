@@ -1,7 +1,21 @@
-import { flipCard, cards } from '../script.js';
+/**
+ * @jest-environment jsdom
+ */
+
+const { flipCard, cards, matchedCards } = require('../script.js');
+
+beforeEach(() => {
+  // Reset matchedCards array before each test
+  matchedCards.length = 0;
+  let fs = require('fs');
+  let fileContent = fs.readFileSync('categories.html', 'utf-8');
+  document.open();
+  document.write(fileContent);
+  document.close();
+});
 
 describe('card matching', () => {
-    it('matches two cards with the same id', () => {
+    test('matches two cards with the same id', () => {
       // Flipping two cards with the same id
       const card1 = cards[0];
       const card2 = cards[1]; // same id as card1
@@ -15,7 +29,7 @@ describe('card matching', () => {
       expect(matchedCards[1].querySelector('audio').id).toBe(card2.id);
     });
   
-    it('does not match two cards with different ids', () => {
+    test('does not match two cards with different ids', () => {
       // Flipping two cards with different id
       const card1 = cards[0];
       const card2 = cards[2]; // different id than card1
