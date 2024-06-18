@@ -20,6 +20,7 @@ I used Balsamiq to create my wireframe, which you can check here [Link to the wi
 * I used Microsoft Paint to create and edit pictures.
 * I used my phone to record audio. (Samsung Voice recorder)
 * I used Microsoft Copilot and Blackbox AI to check my code and advice improvement. 
+* I used converters to change image format to .webp, such as [CloudConvert](https://cloudconvert.com/jpg-to-webp) and [FreeConvert](https://www.freeconvert.com/jpg-to-webp).
 ## 8. Testing
 ### 8.1. Code validation
 ### 8.2. Test cases
