@@ -32,7 +32,7 @@ shuffledCards.forEach((card)=> {
 	const cardHTML = `
 	<div class="memory-card col-1 offset-1 m-2" data-frame="image">
 	<img class="front-face d-none" src="${card.src}" alt="front of card"/>
-	<img class="back-face" src="assets/images/card-back.jpg" alt="back of card"/>
+	<img class="back-face" src="assets/images/card-back.webp" alt="back of card"/>
 	<audio id="${card.id}"><source src="${card.audioSrc}" type="audio/mpeg">Your browser does not support the audio element.</audio>
 	</div>
      `;
@@ -131,7 +131,7 @@ function resetGame(){
         const cardHTML = `
         <div class="memory-card col-1 offset-1 m-2" data-frame="image">
         <img class="front-face d-none" src="${card.src}" alt="front of card"/>
-        <img class="back-face" src="assets/images/card-back.jpg" alt="back of card"/>
+        <img class="back-face" src="assets/images/card-back.webp" alt="back of card"/>
         <audio id="${card.id}"><source src="${card.audioSrc}" type="audio/mpeg">Your browser does not support the audio element.</audio>
         </div>
          `;
