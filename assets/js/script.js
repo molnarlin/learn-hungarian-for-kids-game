@@ -156,4 +156,6 @@ function resetGame(){
     function updateProgressBar() {
         const progressPercentage = ((matchedCardsCount / totalCards) * 100);
     progressBar.style.width = `${progressPercentage}%`;
-    }
+    };
+
+    export {flipCard, cards};
