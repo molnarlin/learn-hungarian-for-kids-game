@@ -1,4 +1,4 @@
-import { flipCard, cards } from 'script.js';
+import { flipCard, cards } from '../script.js';
 
 describe('card matching', () => {
     it('matches two cards with the same id', () => {
