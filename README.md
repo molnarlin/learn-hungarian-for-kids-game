@@ -8,21 +8,21 @@ I wanted to make a language teaching game for children, and I had some criteria 
 4. It has to be a short game or collection of short games. 
 ### 1.1. Developer and business goals
 ## 2. User stories
-As a visitor I want to learn a bit of Hungarian, play fun games. I would like to find easily everything on the webpage. 
+As a visitor I want to learn a bit of Hungarian, and play fun games in the same time. I would like to find easily everything on the webpage. I would like to see, what is the game about, how to play. I would like to see my progress, and I would like to restart the game in any moment. 
 ## 3. Features
 ### 3.1. Existing features
 * There is an easy to navigation bar on the top of the websites. ![picture of nav-bar](assets/images/nav-bar.gif)
 * There is a description of the game, and how to play it. ![picture of intro](assets/images/description.gif)
-* There are the catehories with pictures on the home page. ![picture of categories](assets/images/categories.gif)
+* There is button on the home page to go to the game. ![picture of button]()
 * There is a footer with my name and year, when it was created. ![picture of footer](assets/images/footer.gif)
-* There is a dropdown menu, so people can choose a category, what they want to play. ![picture of dropdown button](assets/images/dropdown.gif)
 * There is a progress bar to see, how many matches the player found. ![picture of the progress bar](assets/images/progress-bar.gif)
 * There is a restart button, if someone want to restart the game. ![picture of restart button](assets/images/restart.gif)
 * There is a card game area, where the player can flip cards and find matching ones. ![picture of the memory card game](assets/images/card-game.gif)
 ## 4. Future features
-I would like to add other features to this website in the future, like songs and stories as well, which help to learn Hungarian. Maybe some grammar exercises to practice, but in a playful version. 
+I would like to add other features to this website in the future, like other categories, songs and stories as well, which help to learn Hungarian. Maybe some grammar exercises to practice, but in a playful version. 
+![picture of categories](/assets/images/categories.gif)
 ## 5. Typography and color scheme
-I used ![Roboto](/assets/images/roboto.gif) font family from [Google Fonts](https://fonts.google.com/).
+I used Roboto font family from [Google Fonts](https://fonts.google.com/). ![Roboto](/assets/images/roboto.gif)
 ## 6. Wireframes
 I used Balsamiq to create my wireframe, which you can check here [Link to the wireframe](Language%20learning%20app.pdf). There are wireframes for 3 different screen sizes (desktop computer, tablet, phone), and a tree structure to understand, how users can navigate between the different game categories. My project has two different websites, and many different games. I modified my wireframe a couple of times; this is the latest version. This wireframe helped me to position things and organize my content.
 ## 7. Technologies used
