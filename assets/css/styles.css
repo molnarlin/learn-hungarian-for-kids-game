@@ -33,8 +33,8 @@ body {
   
   /* Memory game card styling*/
   .front-face, .back-face {
-    width: 8rem;
-    height: 12rem;
+    width: 7rem;
+    height: 11rem;
     }
 
 /*progress bar styling*/
@@ -52,4 +52,18 @@ body {
 
 footer {
   background: white;
+}
+
+@media screen and (max-width: 1200px) {
+  .front-face, .back-face {
+    width: 5rem;
+    height: 7rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+  .front-face, .back-face {
+    width: 4rem;
+    height: 6rem;
+    }
 }
