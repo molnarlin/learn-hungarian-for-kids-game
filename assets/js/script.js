@@ -30,7 +30,7 @@ const shuffledCards= [...cards].sort(() => Math.random() - 0.5);
 
 shuffledCards.forEach((card)=> {
 	const cardHTML = `
-	<div class="memory-card col-lg-1 m-md-2 col-md-2" data-frame="image">
+	<div class="memory-card col-xl-1 col-lg-2 col-3 mb-1 m-lg-2" data-frame="image">
 	<img class="front-face d-none" src="${card.src}" alt="front of card"/>
 	<img class="back-face" src="assets/images/card-back.webp" alt="back of card"/>
 	<audio id="${card.id}"><source src="${card.audioSrc}" type="audio/mpeg">Your browser does not support the audio element.</audio>
@@ -129,7 +129,7 @@ function resetGame(){
     //Re-render the shuffled cards on the page
     shuffledCards.forEach((card)=> {
         const cardHTML = `
-        <div class="memory-card col-lg-1 m-md-2 col-md-2" data-frame="image">
+        <div class="memory-card col-xl-1 col-lg-2 col-3 mb-1 m-lg-2" data-frame="image">
         <img class="front-face d-none" src="${card.src}" alt="front of card"/>
         <img class="back-face" src="assets/images/card-back.webp" alt="back of card"/>
         <audio id="${card.id}"><source src="${card.audioSrc}" type="audio/mpeg">Your browser does not support the audio element.</audio>

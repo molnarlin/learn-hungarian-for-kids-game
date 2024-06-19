@@ -60,10 +60,3 @@ footer {
     height: 7rem;
     }
 }
-
-@media screen and (max-width: 767px) {
-  .front-face, .back-face {
-    width: 4rem;
-    height: 6rem;
-    }
-}
