@@ -22,7 +22,10 @@ As a visitor I want to learn a bit of Hungarian, and play fun games in the same 
 I would like to add other features to this website in the future, like other categories, songs and stories as well, which help to learn Hungarian. Maybe some grammar exercises to practice, but in a playful version. 
 ![picture of categories](/assets/images/categories.gif)
 ## 5. Typography and color scheme
-I used Roboto font family from [Google Fonts](https://fonts.google.com/). ![Roboto](/assets/images/roboto.gif)
+* I used Roboto font family from [Google Fonts](https://fonts.google.com/). ![Roboto](/assets/images/roboto.gif)
+* I used different version of green(rgb(105, 160, 105), green and #011808), red(rgb(240, 200, 200)), white (#ffffff), and black (#000000) colour palette for this project. This colour combination comes from the Hungarian flag. I tried to keep good colour contrasts between the elements.
+* I used images in webp format for the website, because this provides faster loading time, good quality, and improves the website's performance. (Please note, I used gif format to the README.md, because it was easier to save screenshot on my computer this way).
+* I used audio elements in m4a format, because I recorded with my phone.
 ## 6. Wireframes
 I used Balsamiq to create my wireframe, which you can check here [Link to the wireframe](Language%20learning%20app.pdf). There are wireframes for 3 different screen sizes (desktop computer, tablet, phone), and a tree structure to understand, how users can navigate between the different game categories. My project has two different websites, and many different games. I modified my wireframe a couple of times; this is the latest version. This wireframe helped me to position things and organize my content.
 ## 7. Technologies used
