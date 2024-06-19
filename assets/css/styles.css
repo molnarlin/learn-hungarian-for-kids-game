@@ -19,6 +19,7 @@ body {
   .navbar {
       letter-spacing: 5px;
       color: #011808;
+      background: white;
   }
     
   .navbar-nav li a:hover {
@@ -47,4 +48,8 @@ body {
   width: 0%;
   height: 20px;
   background-color: green !important;
+}
+
+footer {
+  background: white;
 }
