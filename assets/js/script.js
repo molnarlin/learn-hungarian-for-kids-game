@@ -80,7 +80,7 @@ function flipCard(card){
                     backFace.classList.remove('d-none');
                 });
               flippedCards = [];
-            }, 1000);
+            }, 500);
         }
     }
 };
