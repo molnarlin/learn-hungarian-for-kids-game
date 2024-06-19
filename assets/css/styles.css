@@ -11,7 +11,7 @@ body {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     overflow-x: hidden;
-    background-image: radial-gradient(rgb(172, 233, 172) 2%, white 87%, rgb(241, 200, 200) 1%);
+    background-image: radial-gradient(rgb(105, 160, 105) 2%, white 87%, rgb(240, 200, 200) 1%);
     color: #011808;
   }
   
