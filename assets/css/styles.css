@@ -29,15 +29,6 @@ body {
     padding-top: 5rem;
     padding-bottom: 2rem;
   }
-
-  /*Card for categories styling*/
-  .card{
-    width: 16rem;
-  }
-  .card img{
-    width: 15rem;
-    height: 12rem;
-  }
   
   /* Memory game card styling*/
   .front-face, .back-face {
