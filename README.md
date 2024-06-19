@@ -13,7 +13,7 @@ As a visitor I want to learn a bit of Hungarian, and play fun games in the same 
 ### 3.1. Existing features
 * There is an easy to navigation bar on the top of the websites. ![picture of nav-bar](assets/images/nav-bar.gif)
 * There is a description of the game, and how to play it. ![picture of intro](assets/images/description.gif)
-* There is button on the home page to go to the game. ![picture of button]()
+* There is a card element on the home page to go to the game. ![picture of button](/assets/images/go-to-play.gif)
 * There is a footer with my name and year, when it was created. ![picture of footer](assets/images/footer.gif)
 * There is a progress bar to see, how many matches the player found. ![picture of the progress bar](assets/images/progress-bar.gif)
 * There is a restart button, if someone want to restart the game. ![picture of restart button](assets/images/restart.gif)
