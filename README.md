@@ -39,6 +39,9 @@ I used Balsamiq to create my wireframe, which you can check here [Link to the wi
 * I used converters to change image format to .webp, such as [CloudConvert](https://cloudconvert.com/jpg-to-webp) and [FreeConvert](https://www.freeconvert.com/jpg-to-webp).
 ## 8. Testing
 ### 8.1. Code validation
+* I used the official W3C validator[W3C validator link](https://validator.w3.org/) for testing HTML, and there were no errors.![html validation screenshot, no errors](/assets/images/html-validation.gif)
+* Official (jigsaw) [CSS validator link](https://jigsaw.w3.org/css-validator/)validator for testing CSS, and my code had no errors. ![css validation screenshot, no errors](/assets/images/css-validation.gif)
+* Lighthouse report in Google Chrome. I checked the accessibility, performance, and best practices here.![Screenshot of lighthouse report](/assets/images/lighthouse.gif)
 ### 8.2. Test cases
 I used Jest to test some functionalities of the game. If you want to see more, [go to the tests folder.](assets/js/tests). 
 1. Testing, if the game find [matching cards](/assets/js/tests/cardMatching.test.js).
