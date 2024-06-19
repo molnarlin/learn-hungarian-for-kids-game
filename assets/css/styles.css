@@ -19,7 +19,6 @@ body {
   .navbar {
       letter-spacing: 5px;
       color: #011808;
-      background-color: #93f8b4;
   }
     
   .navbar-nav li a:hover {
@@ -36,7 +35,7 @@ body {
     width: 16rem;
   }
   .card img{
-    width: 16rem;
+    width: 15rem;
     height: 12rem;
   }
   
