@@ -20,7 +20,7 @@ describe('card rendering', () => {
         const container = document.createElement('div');
         container.id = 'card-container';
 
-        renderCards(container, [
+        cards(container, [
             { id: 'one', src: 'assets/images/one.webp', audioSrc: 'assets/Audio/One.m4a' },
             { id: 'two', src: 'assets/images/two.webp', audioSrc: 'assets/Audio/Two.m4a' },
           ]);
