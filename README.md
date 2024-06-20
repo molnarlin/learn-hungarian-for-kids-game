@@ -45,12 +45,42 @@ I used Balsamiq to create my wireframe, which you can check here [Link to the wi
 * I used www.canva.com [website address](https://www.canva.com/) to create mockup.
 ## 8. Testing
 ### 8.1. Code validation
-* I used the official W3C validator[W3C validator link](https://validator.w3.org/) for testing HTML, and there were no errors.![html validation screenshot, no errors](/assets/images/html-validation.gif)
-* Official (jigsaw) [CSS validator link](https://jigsaw.w3.org/css-validator/)validator for testing CSS, and my code had no errors. ![css validation screenshot, no errors](/assets/images/css-validation.gif)
-* Lighthouse report in Google Chrome. I checked the accessibility, performance, and best practices here.![Screenshot of lighthouse report](/assets/images/lighthouse.gif)
+* I used the official W3C validator[W3C validator link](https://validator.w3.org/) for testing HTML, and there were no errors.![html validation screenshot, no errors](assets/images/html-validation.gif)
+* Official (jigsaw) [CSS validator link](https://jigsaw.w3.org/css-validator/)validator for testing CSS, and my code had no errors. ![css validation screenshot, no errors](assets/images/css-validation.gif)
+* Lighthouse report in Google Chrome. I checked the accessibility, performance, and best practices here.![Screenshot of lighthouse report](assets/images/lighthouse.gif)
+* I tested JavaScript with JSLint![screenshot of JSLint testing](assets/images/jslint.gif), there were no errors, only warnings.
 ### 8.2. Test cases
+#### 8.2.1.
 I used Jest to test some functionalities of the game. If you want to see more, [go to the tests folder.](assets/js/tests). 
 1. Testing, if the game finds [matching cards](/assets/js/tests/cardMatching.test.js).
+2. Testing, if the cards are rendered.
+#### 8.2.2.
+Test Plan Tables
+1. Test Plan Table for Microsoft Edge on Desktop for Home page
+|Test| User requirement addressed | Expected result | Actual result | Pass / Fail | Date | Corrective Action
+|--------------:|:--------------------------:|:---------------:|:-------------:|:-----------:|:----:|:-----------------
+|Logo displayed| Website logo on top|Logo displayed|As expected|Pass|20/06/24|None
+|Nav-bar appears|Website is easy to navigate|Nav-bar appears|As expected|Pass|20/06/24|None
+|Nav-bar hyperlinks work|Website is easy to navigate|When mouse goes over, they get underlined and darker|As expected|Pass|20/06/24|None
+|Text appears|Text is visible|Text is readable|As expected|Pass|20/06/24|None
+|Card appears|Card is visible|Card appears|As expected|Pass|20/06/24|None
+|Card picture renders|Picture is visible|Picture is on top of the card|As expected|Pass|20/06/24|None
+|Card button appears|Website is easy to navigate|When mouse goes over, button gets darker|As expected|Pass|20/06/24|None
+|Card button works|Website is easy to navigate|Button is clickable|As expected|Pass|20/06/24|None
+|Footer appears|Text is visible|Text is readable|As expected|Pass|20/06/24|None
+
+Test Plan Table for Microsoft Edge on Desktop for Memory game page
+|Test| User requirement addressed | Expected result | Actual result | Pass / Fail | Date | Corrective Action
+|--------------:|:--------------------------:|:---------------:|:-------------:|:-----------:|:----:|:-----------------
+|Logo displayed| Website logo on top|Logo displayed|As expected|Pass|20/06/24|None
+|Nav-bar appears|Website is easy to navigate|Nav-bar appears|As expected|Pass|20/06/24|None
+|Nav-bar hyperlinks work|Website is easy to navigate|When mouse goes over, they get underlined and darker|As expected|Pass|20/06/24|None
+|Text appears|Text is visible|Text is readable|As expected|Pass|20/06/24|None
+|Progress bar appears| Progress bar is visible|Progress bar appears|As expected|Pass|20/06/24|None
+|Restart game button appears|Website is easy to navigate|When mouse goes over, it gets darker|As expected|Pass|20/06/24|None
+|Game cards appear|Game cards render|Game cards' back sides are visible|As expected|Pass|20/06/24|None
+|Game cards flip over, when clicked|Website is easy to use|One click, and they flip over one by one|As expected|Pass|20/06/24|None
+|Footer appears|Text is visible|Text is readable|As expected|Pass|20/06/24|None
 ### 8.3. Fixed bugs
 I came across a couple of bugs, and I briefly explained how I fixed them here.
 * I used Bootstrap for this game, and for the grid system, I added classes to the .html file, so any changes in layout were done here. In the example below first, I used class="container-fluid", which fills the available width, but the game card layout didn't work out well, so I changed to class="container".
@@ -78,6 +108,29 @@ I came across a couple of bugs, and I briefly explained how I fixed them here.
     matchedCards =[];
 ```
 But the cards stayed the same place, so I had to add a shuffleCards function, which was very similar, to how I created the shuffledCard array at the beginning.
+
+* There was a problem, when I double clicked the cards, they flipped back. So I added a global flag to the flipped card, started with the value false, when they were flipped, the value was true. Later on this was changed, and only those cards were flipped, which value was false.
+```
+// Add a global flag to track whether a card is being flipped or not
+let isFlipping = false;
+// Add a flag to each card to track its flipped state
+document.querySelectorAll(".memory-card").forEach((card) => {
+  card.flipped = false;
+  card.addEventListener("click", () => {
+    // If a card is being flipped, don't flip another card
+    if (isFlipping) {
+      // do nothing
+      return;
+    }
+    flipCard(card);
+  });
+});
+```
+```
+ if (card.flipped) { /* card is already flipped, exit */ return; }
+    isFlipping = true;
+```
+
 ### 8.4. Supported screens and browsers
 ## 9. Deployment
 ### 9.1. via VS Code
