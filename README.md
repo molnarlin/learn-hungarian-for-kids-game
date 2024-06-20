@@ -42,6 +42,7 @@ I used Balsamiq to create my wireframe, which you can check here [Link to the wi
 * I used my phone to record audio. (Samsung Voice recorder)
 * I used Microsoft Copilot and Blackbox AI to check my code and advise improvement. 
 * I used converters to change the image format to .webp, such as [CloudConvert](https://cloudconvert.com/jpg-to-webp) and [FreeConvert](https://www.freeconvert.com/jpg-to-webp).
+* I used www.canva.com [website address](https://www.canva.com/) to create mockup.
 ## 8. Testing
 ### 8.1. Code validation
 * I used the official W3C validator[W3C validator link](https://validator.w3.org/) for testing HTML, and there were no errors.![html validation screenshot, no errors](/assets/images/html-validation.gif)
