@@ -7,6 +7,7 @@ I wanted to make a language-teaching game for children, and I had some criteria 
 3. It has to be easy to use.
 4. It has to be a short game or a collection of short games. 
 ### 1.1. Developer and business goals
+As a developer I wanted to create a memory game, what helps to learn a language. There is lots of repetition in the game, so it helps to memorize the words better, and faster. It is engaging as well, because people have to solve a challange. It is user-friendly, so it's easy to understand the game, and it's easy to navigate around. I wanted to make it accessible for everyone, and on different screen sizes as well, like mobile phones.
 ## 2. User stories
 As a visitor, I want to learn a bit of Hungarian and play fun games simultaneously. I would like to easily find everything on the webpage. I would like to see, what is the game about, and how to play it. I would like to see my progress, and I would like to restart the game at any moment. 
 ## 3. Features

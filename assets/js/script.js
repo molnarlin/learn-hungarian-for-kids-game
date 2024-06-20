@@ -29,14 +29,15 @@ let matchedCardsCount = 0;
 const shuffledCards= [...cards].sort(() => Math.random() - 0.5);
 
 shuffledCards.forEach((card)=> {
+  document.getElementById('card-container').innerHTML += cardHTML;
+
 	const cardHTML = `
 	<div class="memory-card col-xl-1 col-lg-2 col-3 mb-1 m-lg-2" data-frame="image">
 	<img class="front-face d-none" src="${card.src}" alt="front of card"/>
 	<img class="back-face" src="assets/images/card-back.webp" alt="back of card"/>
 	<audio id="${card.id}"><source src="${card.audioSrc}" type="audio/mpeg">Your browser does not support the audio element.</audio>
 	</div>
-     `;
-   document.getElementById('card-container').innerHTML += cardHTML;
+     `;  
 });
 
 //Add event listener to the cards
@@ -80,7 +81,7 @@ function flipCard(card){
                     backFace.classList.remove('d-none');
                 });
               flippedCards = [];
-            }, 500);
+            }, 100);
         }
     }
 };
@@ -128,6 +129,8 @@ function resetGame(){
     
     //Re-render the shuffled cards on the page
     shuffledCards.forEach((card)=> {
+        cardContainer.innerHTML += cardHTML;
+
         const cardHTML = `
         <div class="memory-card col-xl-1 col-lg-2 col-3 mb-1 m-lg-2" data-frame="image">
         <img class="front-face d-none" src="${card.src}" alt="front of card"/>
@@ -135,7 +138,6 @@ function resetGame(){
         <audio id="${card.id}"><source src="${card.audioSrc}" type="audio/mpeg">Your browser does not support the audio element.</audio>
         </div>
          `;
-       cardContainer.innerHTML += cardHTML;
     });
     document.querySelectorAll('.memory-card').forEach((card) => {
       card.addEventListener('click', () => {
