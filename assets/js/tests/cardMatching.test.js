@@ -8,14 +8,19 @@ beforeEach(() => {
   // Reset matchedCards array before each test
   matchedCards.length = 0;
   let fs = require('fs');
-  let fileContent = fs.readFileSync('categories.html', 'utf-8');
+  let fileContents = fs.readFileSync('categories.html', 'utf-8');
   document.open();
-  document.write(fileContent);
+  document.write(fileContents);
   document.close();
 });
 
 describe('card matching', () => {
     test('matches two cards with the same id', () => {
+
+      // Create a mock container element
+      const container = document.createElement('div');
+      container.id = 'card-container';
+
       // Flipping two cards with the same id
       const card1 = cards[0];
       const card2 = cards[1]; // same id as card1
@@ -30,6 +35,11 @@ describe('card matching', () => {
     });
   
     test('does not match two cards with different ids', () => {
+
+      // Create a mock container element
+      const container = document.createElement('div');
+      container.id = 'card-container';
+      
       // Flipping two cards with different id
       const card1 = cards[0];
       const card2 = cards[2]; // different id than card1
