@@ -28,7 +28,7 @@ let matchedCardsCount = 0;
 
 const shuffledCards= [...cards].sort(() => Math.random() - 0.5);
 
-addEventListener("DOMContentLoaded", () => {shuffledCards.forEach((card)=> {
+shuffledCards.forEach((card)=> {
   
 	const cardHTML = `
 	<div class="memory-card col-xl-1 col-lg-2 col-3 mb-1 m-lg-2" data-frame="image">
@@ -39,8 +39,6 @@ addEventListener("DOMContentLoaded", () => {shuffledCards.forEach((card)=> {
      `;  
      
      document.getElementById('card-container').innerHTML += cardHTML;
-
-});
 
 });
 
@@ -165,3 +163,5 @@ function resetGame(){
     };
 
     exports = {flipCard, cards, matchedCards};
+
+  
