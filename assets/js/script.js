@@ -26,6 +26,14 @@ let matchedCards = [];
 let totalCards = cards.length;
 let matchedCardsCount = 0;
 
+// Add a flag to each card to track its flipped state
+document.querySelectorAll('.memory-card').forEach((card) => {
+  card.flipped = false;
+  card.addEventListener('click', () => {
+    flipCard(card);
+  });
+});
+
 const shuffledCards= [...cards].sort(() => Math.random() - 0.5);
 
 shuffledCards.forEach((card)=> {
@@ -50,11 +58,8 @@ document.querySelectorAll('.memory-card').forEach((card) => {
 });
 
 function flipCard(card){
-    // Check if the card is already in the flippedCards array
-    if (flippedCards.includes(card)) {
-      return; // Don't add it again
-  }
-  
+    if (card.flipped) return; // If the card is already flipped, don't flip it again
+
     const frontFace = card.querySelector('.front-face');
     const backFace = card.querySelector('.back-face');
     frontFace.classList.remove('d-none');
@@ -63,6 +68,9 @@ function flipCard(card){
     const audio = card.querySelector('audio');
     audio.play();
     updateProgressBar();
+
+    // Set the flipped flag to true
+  card.flipped = true;
 
  // Add flipped card to the array
     flippedCards.push(card);
@@ -86,6 +94,8 @@ function flipCard(card){
                     frontFace.classList.add('d-none');
                     frontFace.classList.remove('d-block');
                     backFace.classList.remove('d-none');
+                    // Reset the flipped flag to false
+                    card.flipped = false;
                 });
               flippedCards = [];
             }, 300);
