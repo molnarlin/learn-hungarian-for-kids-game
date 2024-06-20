@@ -28,7 +28,7 @@ let matchedCardsCount = 0;
 
 const shuffledCards= [...cards].sort(() => Math.random() - 0.5);
 
-shuffledCards.forEach((card)=> {
+addEventListener("DOMContentLoaded", () => {shuffledCards.forEach((card)=> {
   
 	const cardHTML = `
 	<div class="memory-card col-xl-1 col-lg-2 col-3 mb-1 m-lg-2" data-frame="image">
@@ -39,6 +39,8 @@ shuffledCards.forEach((card)=> {
      `;  
      
      document.getElementById('card-container').innerHTML += cardHTML;
+
+});
 
 });
 
@@ -83,7 +85,7 @@ function flipCard(card){
                     backFace.classList.remove('d-none');
                 });
               flippedCards = [];
-            }, 100);
+            }, 300);
         }
     }
 };
@@ -162,4 +164,4 @@ function resetGame(){
     progressBar.style.width = `${progressPercentage}%`;
     };
 
-    exports = {flipCard, cards, matchedCards};
+    module.exports = {flipCard, cards, matchedCards};
