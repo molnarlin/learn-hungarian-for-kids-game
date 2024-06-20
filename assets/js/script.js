@@ -50,6 +50,11 @@ document.querySelectorAll('.memory-card').forEach((card) => {
 });
 
 function flipCard(card){
+    // Check if the card is already in the flippedCards array
+    if (flippedCards.includes(card)) {
+      return; // Don't add it again
+  }
+  
     const frontFace = card.querySelector('.front-face');
     const backFace = card.querySelector('.back-face');
     frontFace.classList.remove('d-none');
