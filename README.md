@@ -1,3 +1,4 @@
+![My website on different screen sizes](/assets/images/Kids-learn-hungarian-app-mockup.gif)
 # Milestone project 2
 This is a milestone project 2 for Code Institute and Runshaw College.
 ## 1. Purpose of the project
