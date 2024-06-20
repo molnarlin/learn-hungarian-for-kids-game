@@ -57,19 +57,21 @@ I used Jest to test some functionalities of the game. If you want to see more, [
 #### 8.2.2.
 Test Plan Tables
 1. Test Plan Table for Microsoft Edge on Desktop for Home page
+**********
 |Test| User requirement addressed | Expected result | Actual result | Pass / Fail | Date | Corrective Action
 |--------------:|:--------------------------:|:---------------:|:-------------:|:-----------:|:----:|:-----------------
 |Logo displayed| Website logo on top|Logo displayed|As expected|Pass|20/06/24|None
 |Nav-bar appears|Website is easy to navigate|Nav-bar appears|As expected|Pass|20/06/24|None
-|Nav-bar hyperlinks work|Website is easy to navigate|When mouse goes over, they get underlined and darker|As expected|Pass|20/06/24|None
+|Nav-bar hyperlinks work|Website is easy to navigate|When mouse goes over,they get underlined and darker|As expected|Pass|20/06/24|None
 |Text appears|Text is visible|Text is readable|As expected|Pass|20/06/24|None
 |Card appears|Card is visible|Card appears|As expected|Pass|20/06/24|None
 |Card picture renders|Picture is visible|Picture is on top of the card|As expected|Pass|20/06/24|None
-|Card button appears|Website is easy to navigate|When mouse goes over, button gets darker|As expected|Pass|20/06/24|None
+|Card button appears|Website is easy to navigate|When mouse goes over,button gets darker|As expected|Pass|20/06/24|None
 |Card button works|Website is easy to navigate|Button is clickable|As expected|Pass|20/06/24|None
 |Footer appears|Text is visible|Text is readable|As expected|Pass|20/06/24|None
 
 Test Plan Table for Microsoft Edge on Desktop for Memory game page
+****************
 |Test| User requirement addressed | Expected result | Actual result | Pass / Fail | Date | Corrective Action
 |--------------:|:--------------------------:|:---------------:|:-------------:|:-----------:|:----:|:-----------------
 |Logo displayed| Website logo on top|Logo displayed|As expected|Pass|20/06/24|None
