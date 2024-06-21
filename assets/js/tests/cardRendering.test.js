@@ -3,6 +3,7 @@
  */
 
 const { cards, shuffleCards} = require('../script.js');
+let cardContainer = document.getElementById("card-container"); // Declare container variable in the outer scope
 
 beforeEach(() => {
   let fs = require('fs');
@@ -14,7 +15,6 @@ beforeEach(() => {
 
 describe('card rendering', () => {
     test('renders cards with correct HTML structure and content', () => {
-      const container = document.body; // Assign document.body to a variable
         // Call the function that renders the cards
         shuffleCards();
 

@@ -198,4 +198,4 @@ function resetGame(){
         const progressPercentage = ((matchedCardsCount / totalCards) * 100);
     progressBar.style.width = `${progressPercentage}%`;
     }
-    module.exports = {cards, shuffleCards};
+    module.exports = {cards, shuffledCards};
