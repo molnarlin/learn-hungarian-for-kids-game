@@ -22,9 +22,9 @@ As a visitor, I want to learn a bit of Hungarian and play fun games simultaneous
 * There is a card game area, where the player can flip cards and find matching ones. ![picture of the memory card game](assets/images/card-game.gif)
 ## 4. Future features
 I would like to add other features to this website in the future, like other categories, songs, and stories as well, which help to learn Hungarian. Maybe some grammar exercises to practice, but in a playful version. 
-![picture of categories](/assets/images/categories.gif)
+![picture of categories](assets/images/categories.gif)
 ## 5. Typography and color scheme
-* I used the 'Roboto' font family from [Google Fonts](https://fonts.google.com/). ![Roboto](/assets/images/roboto.gif)
+* I used the 'Roboto' font family from [Google Fonts](https://fonts.google.com/). ![Roboto](assets/images/roboto.gif)
 * I used different version of green(#69A069, green and #011808), red(#F0C8C8), white (#ffffff), and black (#000000) colour palette for this project. This colour palette comes from the Hungarian flag. I tried to keep good colour contrasts between the elements. ![Screenshot of colours](assets/images/colour-palette.gif)
 * I used images in webp format for the website, because this provides faster loading time, good quality, and improves the website's performance. (Please note, I used gif format to the README.md because it was easier to save screenshots on my computer this way).
 * I used audio elements in m4a format because I recorded them with my phone.
@@ -52,7 +52,7 @@ I used Balsamiq to create my wireframe, which you can check here: [link to the w
 ### 8.2. Test cases
 #### 8.2.1.
 I used Jest to test some functionalities of the game. If you want to see more, [go to the tests folder.](assets/js/tests). 
-1. Testing, if the game finds [matching cards](/assets/js/tests/cardMatching.test.js).
+1. Testing, if the game finds [matching cards](assets/js/tests/cardMatching.test.js).
 2. Testing, if the cards are rendered.
 #### 8.2.2.
 Test Plan Tables
