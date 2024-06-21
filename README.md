@@ -49,15 +49,10 @@ I used Balsamiq to create my wireframe, which you can check here: [link to the w
 * Official (jigsaw) [CSS validator link](https://jigsaw.w3.org/css-validator/) validator for testing CSS, and my code had no errors. ![css validation screenshot, no errors](assets/images/css-validation.gif)
 * Lighthouse report in Google Chrome. I checked the accessibility, performance, and best practices here.![Screenshot of lighthouse report](assets/images/lighthouse.gif)
 * I tested JavaScript with JSLint, there were no errors, only warnings. ![screenshot of JSLint testing](assets/images/jslint.gif)
-### 8.2. Test cases
-#### 8.2.1.
-I used Jest to test some functionalities of the game. If you want to see more, [go to the tests folder.](assets/js/tests). 
-1. Testing, if the game finds [matching cards](assets/js/tests/cardMatching.test.js).
-2. Testing, if the cards are rendered.
-#### 8.2.2.
+#### 8.2.
 Test Plan Tables
 ***********************************
-**1. Test Plan Table for Microsoft Edge on Desktop for Home page**
+**8.2.1. Test Plan Table for Microsoft Edge on Desktop for Home page**
 **********
 |Test| User requirement addressed | Expected result | Actual result | Pass / Fail | Date | Corrective Action
 |--------------:|:--------------------------:|:---------------:|:-------------:|:-----------:|:----:|:-----------------
@@ -85,7 +80,7 @@ Test Plan Tables
 |Game cards flip over, when clicked|Website is easy to use|One click, and they flip over one by one|As expected|Pass|20/06/24|None
 |Footer appears|Text is visible|Text is readable|As expected|Pass|20/06/24|None
 ************************************
-**2. Test Plan Table for Google Chrome on Desktop for Home page**
+**8.2.2. Test Plan Table for Google Chrome on Desktop for Home page**
 **********
 |Test| User requirement addressed | Expected result | Actual result | Pass / Fail | Date | Corrective Action
 |--------------:|:--------------------------:|:---------------:|:-------------:|:-----------:|:----:|:-----------------
@@ -113,7 +108,7 @@ Test Plan Tables
 |Game cards flip over, when clicked|Website is easy to use|One click, and they flip over one by one|As expected|Pass|20/06/24|None
 |Footer appears|Text is visible|Text is readable|As expected|Pass|20/06/24|None
 ************************************
-**3. Test Plan Table for Google Chrome on Chromebook for Home page**
+**8.2.3. Test Plan Table for Google Chrome on Chromebook for Home page**
 **********
 |Test| User requirement addressed | Expected result | Actual result | Pass / Fail | Date | Corrective Action
 |--------------:|:--------------------------:|:---------------:|:-------------:|:-----------:|:----:|:-----------------
@@ -141,7 +136,7 @@ Test Plan Tables
 |Game cards flip over, when clicked|Website is easy to use|One click, and they flip over one by one|As expected|Pass|20/06/24|None
 |Footer appears|Text is visible|Text is readable|As expected|Pass|20/06/24|None
 ************************************
-**4. Test Plan Table for Google Chrome on Samsung Galaxy phone for Home page**
+**8.2.4. Test Plan Table for Google Chrome on Samsung Galaxy phone for Home page**
 **********
 |Test| User requirement addressed | Expected result | Actual result | Pass / Fail | Date | Corrective Action
 |--------------:|:--------------------------:|:---------------:|:-------------:|:-----------:|:----:|:-----------------
@@ -201,10 +196,11 @@ document.querySelectorAll(".memory-card").forEach((card) => {
 ```
 
 ### 8.4. Supported screens and browsers
+I used Google Chrome's Inspect tool to test my webpage on various devices with different screen sizes, please see picture below. I found that it rendered well without any issues. I checked the website in Microsoft Edge, Samsung Internet Browser and Google Chrome as well, but I could not find any problems. The site looked responsive and performed as expected. ![Screenshot of device mocking](assets/images/devices.gif)
 ## 9. Deployment
 ### 9.1. via VS Code
 1. I had some problem with VS Code to deploy my code locally, so I cloned my repository to my computer.
-2. I opened the index.html and categories.html from my computer's File Explorer. 
+2. I opened the index.html and game.html from my computer's File Explorer. 
 ### 9.2. via GitHub Pages
 1. I connected Visual Studio Code with my GitHub account.
 2. I committed and pushed all of my new code regularly to GitHub.
