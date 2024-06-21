@@ -15,7 +15,7 @@ As a visitor, I want to learn a bit of Hungarian and play fun games simultaneous
 ### 3.1. Existing features
 * There is an easy-to-use navigation bar at the top of the websites. ![picture of nav-bar](assets/images/nav-bar.gif)
 * There is a description of the game, and how to play it. ![picture of intro](assets/images/description.gif)
-* There is a card element on the home page to go to the game. ![picture of button](/assets/images/go-to-play.gif)
+* There is a card element on the home page to go to the game. ![picture of button](assets/images/go-to-play.gif)
 * There is a footer with my name and the year when it was created. ![picture of footer](assets/images/footer.gif)
 * There is a progress bar to see, how many matches the player found. ![picture of the progress bar](assets/images/progress-bar.gif)
 * There is a restart button, if someone wants to restart the game. ![picture of restart button](assets/images/restart.gif)
@@ -25,7 +25,7 @@ I would like to add other features to this website in the future, like other cat
 ![picture of categories](/assets/images/categories.gif)
 ## 5. Typography and color scheme
 * I used the 'Roboto' font family from [Google Fonts](https://fonts.google.com/). ![Roboto](/assets/images/roboto.gif)
-* I used different version of green(rgb(105, 160, 105), green and #011808), red(rgb(240, 200, 200)), white (#ffffff), and black (#000000) colour palette for this project. This colour combination comes from the Hungarian flag. I tried to keep good colour contrasts between the elements.
+* I used different version of green(#69A069, green and #011808), red(#F0C8C8), white (#ffffff), and black (#000000) colour palette for this project. This colour combination comes from the Hungarian flag. I tried to keep good colour contrasts between the elements. ![Screenshot of colours](assets/images/colour-palette.gif)
 * I used images in webp format for the website, because this provides faster loading time, good quality, and improves the website's performance. (Please note, I used gif format to the README.md because it was easier to save screenshots on my computer this way).
 * I used audio elements in m4a format because I recorded with my phone.
 ## 6. Wireframes
