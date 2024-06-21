@@ -67,6 +67,24 @@ let totalCards = cards.length;
 let matchedCardsCount = 0;
 // Add a global flag to track whether a card is being flipped or not
 let isFlipping = false;
+//code from W£School with a bit modification
+function play(id) {
+  let audio = document.getElementById(id);
+  if (audio.paused){
+     audio.play();
+  } else {
+     audio.pause();
+ }
+}
+//For the progress-bar
+progressBar = document.querySelector(".progress-bar");
+function resetProgressBar(){
+  progressBar.style.width = 0;
+}
+function updateProgressBar() {
+    const progressPercentage = ((matchedCardsCount / totalCards) * 100);
+progressBar.style.width = `${progressPercentage}%`;
+}
 // Add a flag to each card to track its flipped state
 document.querySelectorAll(".memory-card").forEach((card) => {
   card.flipped = false;
@@ -127,15 +145,7 @@ function flipCard(card){
       isFlipping = false; // Reset the global flag to false
 }
 }
-//code from W£School with a bit modification
-function play(id) {
-    let audio = document.getElementById(id);
-    if (audio.paused){
-       audio.play();
-    } else {
-       audio.pause();
-   }
-}
+
 //start and restart game function
 function startGame(){
     //Remove and add the 'd-block' class and 'd-none'(from Bootstrap documentation)
@@ -182,13 +192,4 @@ function shuffleCards (){
     });
     resetProgressBar();
     }
-    //For the progress-bar
-    progressBar = document.querySelector(".progress-bar");
-    function resetProgressBar(){
-      progressBar.style.width = 0;
-    }
-    function updateProgressBar() {
-        const progressPercentage = ((matchedCardsCount / totalCards) * 100);
-    progressBar.style.width = `${progressPercentage}%`;
-    }
-    module.exports = {cards, shuffleCards};
+    
