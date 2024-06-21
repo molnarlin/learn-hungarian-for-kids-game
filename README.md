@@ -8,9 +8,9 @@ I wanted to make a language-teaching game for children, and I had some criteria 
 3. It has to be easy to use.
 4. It has to be a short game or a collection of short games. 
 ### 1.1. Developer and business goals
-As a developer I wanted to create a memory game, what helps to learn a language. There is lots of repetition in the game, so it helps to memorize the words better, and faster. It is engaging as well, because people have to solve a challange. It is user-friendly, so it's easy to understand the game, and it's easy to navigate around. I wanted to make it accessible for everyone, and on different screen sizes as well, like mobile phones.
+As a developer, I wanted to create a memory game, which helps to learn a language. There is lots of repetition in the game, so it helps to memorize the words better, and faster. It is engaging as well because people have to solve a challenge. It is user-friendly, so it's easy to understand the game, and it's easy to navigate around. I wanted to make it accessible for everyone, and on different screen sizes as well, like mobile phones.
 ## 2. User stories
-As a visitor, I want to learn a bit of Hungarian and play fun games simultaneously. I would like to easily find everything on the webpage. I would like to see, what is the game about, and how to play it. I would like to see my progress, and I would like to restart the game at any moment. 
+As a visitor, I want to learn a bit of Hungarian and play fun games simultaneously. I want to find everything on the webpage easily. I would like to see, what the game is about, and how to play it. I would like to see my progress, and I would like to restart the game at any moment. 
 ## 3. Features
 ### 3.1. Existing features
 * There is an easy-to-use navigation bar at the top of the websites. ![picture of nav-bar](assets/images/nav-bar.gif)
@@ -63,11 +63,11 @@ Test Plan Tables
 |--------------:|:--------------------------:|:---------------:|:-------------:|:-----------:|:----:|:-----------------
 |Logo displayed| Website logo on top|Logo displayed|As expected|Pass|20/06/24|None
 |Nav-bar appears|Website is easy to navigate|Nav-bar appears|As expected|Pass|20/06/24|None
-|Nav-bar hyperlinks work|Website is easy to navigate|When mouse goes over,they get underlined and darker|As expected|Pass|20/06/24|None
+|Nav-bar hyperlinks work|Website is easy to navigate|When you move the mouse over, it will become darker and underlined.|As expected|Pass|20/06/24|None
 |Text appears|Text is visible|Text is readable|As expected|Pass|20/06/24|None
 |Card appears|Card is visible|Card appears|As expected|Pass|20/06/24|None
 |Card picture renders|Picture is visible|Picture is on top of the card|As expected|Pass|20/06/24|None
-|Card button appears|Website is easy to navigate|When mouse goes over,button gets darker|As expected|Pass|20/06/24|None
+|Card button appears|Website is easy to navigate|When you move the mouse over the button, it will become darker.|As expected|Pass|20/06/24|None
 |Card button works|Website is easy to navigate|Button is clickable|As expected|Pass|20/06/24|None
 |Footer appears|Text is visible|Text is readable|As expected|Pass|20/06/24|None
 *************************************
@@ -77,10 +77,10 @@ Test Plan Table for Microsoft Edge on Desktop for Memory game page
 |--------------:|:--------------------------:|:---------------:|:-------------:|:-----------:|:----:|:-----------------
 |Logo displayed| Website logo on top|Logo displayed|As expected|Pass|20/06/24|None
 |Nav-bar appears|Website is easy to navigate|Nav-bar appears|As expected|Pass|20/06/24|None
-|Nav-bar hyperlinks work|Website is easy to navigate|When mouse goes over, they get underlined and darker|As expected|Pass|20/06/24|None
+|Nav-bar hyperlinks work|Website is easy to navigate||When you move the mouse over, it will become darker and underlined.|As expected|Pass|20/06/24|None
 |Text appears|Text is visible|Text is readable|As expected|Pass|20/06/24|None
 |Progress bar appears| Progress bar is visible|Progress bar appears|As expected|Pass|20/06/24|None
-|Restart game button appears|Website is easy to navigate|When mouse goes over, it gets darker|As expected|Pass|20/06/24|None
+|Restart game button appears|Website is easy to navigate|When you move the mouse over the button, it will become darker.|As expected|Pass|20/06/24|None
 |Game cards appear|Game cards render|Game cards' back sides are visible|As expected|Pass|20/06/24|None
 |Game cards flip over, when clicked|Website is easy to use|One click, and they flip over one by one|As expected|Pass|20/06/24|None
 |Footer appears|Text is visible|Text is readable|As expected|Pass|20/06/24|None
@@ -91,11 +91,11 @@ Test Plan Table for Microsoft Edge on Desktop for Memory game page
 |--------------:|:--------------------------:|:---------------:|:-------------:|:-----------:|:----:|:-----------------
 |Logo displayed| Website logo on top|Logo displayed|As expected|Pass|20/06/24|None
 |Nav-bar appears|Website is easy to navigate|Nav-bar appears|As expected|Pass|20/06/24|None
-|Nav-bar hyperlinks work|Website is easy to navigate|When mouse goes over,they get underlined and darker|As expected|Pass|20/06/24|None
+|Nav-bar hyperlinks work|Website is easy to navigate||When you move the mouse over, it will become darker and underlined.|As expected|Pass|20/06/24|None
 |Text appears|Text is visible|Text is readable|As expected|Pass|20/06/24|None
 |Card appears|Card is visible|Card appears|As expected|Pass|20/06/24|None
 |Card picture renders|Picture is visible|Picture is on top of the card|As expected|Pass|20/06/24|None
-|Card button appears|Website is easy to navigate|When mouse goes over,button gets darker|As expected|Pass|20/06/24|None
+|Card button appears|Website is easy to navigate|When you move the mouse over the button, it will become darker.|As expected|Pass|20/06/24|None
 |Card button works|Website is easy to navigate|Button is clickable|As expected|Pass|20/06/24|None
 |Footer appears|Text is visible|Text is readable|As expected|Pass|20/06/24|None
 *************************************
@@ -105,10 +105,10 @@ Test Plan Table for Google Chrome on Desktop for Memory game page
 |--------------:|:--------------------------:|:---------------:|:-------------:|:-----------:|:----:|:-----------------
 |Logo displayed| Website logo on top|Logo displayed|As expected|Pass|20/06/24|None
 |Nav-bar appears|Website is easy to navigate|Nav-bar appears|As expected|Pass|20/06/24|None
-|Nav-bar hyperlinks work|Website is easy to navigate|When mouse goes over, they get underlined and darker|As expected|Pass|20/06/24|None
+|Nav-bar hyperlinks work|Website is easy to navigate||When you move the mouse over, it will become darker and underlined.|As expected|Pass|20/06/24|None
 |Text appears|Text is visible|Text is readable|As expected|Pass|20/06/24|None
 |Progress bar appears| Progress bar is visible|Progress bar appears|As expected|Pass|20/06/24|None
-|Restart game button appears|Website is easy to navigate|When mouse goes over, it gets darker|As expected|Pass|20/06/24|None
+|Restart game button appears|Website is easy to navigate|When you move the mouse over the button, it will become darker.|As expected|Pass|20/06/24|None
 |Game cards appear|Game cards render|Game cards' back sides are visible|As expected|Pass|20/06/24|None
 |Game cards flip over, when clicked|Website is easy to use|One click, and they flip over one by one|As expected|Pass|20/06/24|None
 |Footer appears|Text is visible|Text is readable|As expected|Pass|20/06/24|None
@@ -119,11 +119,11 @@ Test Plan Table for Google Chrome on Desktop for Memory game page
 |--------------:|:--------------------------:|:---------------:|:-------------:|:-----------:|:----:|:-----------------
 |Logo displayed| Website logo on top|Logo displayed|As expected|Pass|20/06/24|None
 |Nav-bar appears|Website is easy to navigate|Nav-bar appears|As expected|Pass|20/06/24|None
-|Nav-bar hyperlinks work|Website is easy to navigate|When mouse goes over,they get underlined and darker|As expected|Pass|20/06/24|None
+|Nav-bar hyperlinks work|Website is easy to navigate||When you move the mouse over, it will become darker and underlined.|As expected|Pass|20/06/24|None
 |Text appears|Text is visible|Text is readable|As expected|Pass|20/06/24|None
 |Card appears|Card is visible|Card appears|As expected|Pass|20/06/24|None
 |Card picture renders|Picture is visible|Picture is on top of the card|As expected|Pass|20/06/24|None
-|Card button appears|Website is easy to navigate|When mouse goes over,button gets darker|As expected|Pass|20/06/24|None
+|Card button appears|Website is easy to navigate|When you move the mouse over the button, it will become darker.|As expected|Pass|20/06/24|None
 |Card button works|Website is easy to navigate|Button is clickable|As expected|Pass|20/06/24|None
 |Footer appears|Text is visible|Text is readable|As expected|Pass|20/06/24|None
 *************************************
@@ -133,10 +133,10 @@ Test Plan Table for Google Chrome on Chromebook for Memory game page
 |--------------:|:--------------------------:|:---------------:|:-------------:|:-----------:|:----:|:-----------------
 |Logo displayed| Website logo on top|Logo displayed|As expected|Pass|20/06/24|None
 |Nav-bar appears|Website is easy to navigate|Nav-bar appears|As expected|Pass|20/06/24|None
-|Nav-bar hyperlinks work|Website is easy to navigate|When mouse goes over, they get underlined and darker|As expected|Pass|20/06/24|None
+|Nav-bar hyperlinks work|Website is easy to navigate||When you move the mouse over, it will become darker and underlined.|As expected|Pass|20/06/24|None
 |Text appears|Text is visible|Text is readable|As expected|Pass|20/06/24|None
 |Progress bar appears| Progress bar is visible|Progress bar appears|As expected|Pass|20/06/24|None
-|Restart game button appears|Website is easy to navigate|When mouse goes over, it gets darker|As expected|Pass|20/06/24|None
+|Restart game button appears|Website is easy to navigate|When you move the mouse over the button, it will become darker.|As expected|Pass|20/06/24|None
 |Game cards appear|Game cards render|Game cards' back sides are visible|As expected|Pass|20/06/24|None
 |Game cards flip over, when clicked|Website is easy to use|One click, and they flip over one by one|As expected|Pass|20/06/24|None
 |Footer appears|Text is visible|Text is readable|As expected|Pass|20/06/24|None
@@ -147,11 +147,11 @@ Test Plan Table for Google Chrome on Chromebook for Memory game page
 |--------------:|:--------------------------:|:---------------:|:-------------:|:-----------:|:----:|:-----------------
 |Logo displayed| Website logo on top|Logo displayed|As expected|Pass|20/06/24|None
 |Nav-bar appears|Website is easy to navigate|Nav-bar appears|As expected|Pass|20/06/24|None
-|Nav-bar hyperlinks work|Website is easy to navigate|When mouse goes over,they get underlined and darker|As expected|Pass|20/06/24|None
+|Nav-bar hyperlinks work|Website is easy to navigate||When clicked, it will become green and underlined.|As expected|Pass|20/06/24|None
 |Text appears|Text is visible|Text is readable|As expected|Pass|20/06/24|None
 |Card appears|Card is visible|Card appears|As expected|Pass|20/06/24|None
 |Card picture renders|Picture is visible|Picture is on top of the card|As expected|Pass|20/06/24|None
-|Card button appears|Website is easy to navigate|When mouse goes over,button gets darker|As expected|Pass|20/06/24|None
+|Card button appears|Website is easy to navigate|When clicked, it will become darker.|As expected|Pass|20/06/24|None
 |Card button works|Website is easy to navigate|Button is clickable|As expected|Pass|20/06/24|None
 |Footer appears|Text is visible|Text is readable|As expected|Pass|20/06/24|None
 *************************************
@@ -161,17 +161,17 @@ Test Plan Table for Google Chrome on Samsung Galaxy phone for Memory game page
 |--------------:|:--------------------------:|:---------------:|:-------------:|:-----------:|:----:|:-----------------
 |Logo displayed| Website logo on top|Logo displayed|As expected|Pass|20/06/24|None
 |Nav-bar appears|Website is easy to navigate|Nav-bar appears|As expected|Pass|20/06/24|None
-|Nav-bar hyperlinks work|Website is easy to navigate|When mouse goes over, they get underlined and darker|As expected|Pass|20/06/24|None
+|Nav-bar hyperlinks work|Website is easy to navigate||When clicked, it will become green and underlined.|As expected|Pass|20/06/24|None
 |Text appears|Text is visible|Text is readable|As expected|Pass|20/06/24|None
 |Progress bar appears| Progress bar is visible|Progress bar appears|As expected|Pass|20/06/24|None
-|Restart game button appears|Website is easy to navigate|When mouse goes over, it gets darker|As expected|Pass|20/06/24|None
+|Restart game button appears|Website is easy to navigate|When clicked, it will become darker.|As expected|Pass|20/06/24|None
 |Game cards appear|Game cards render|Game cards' back sides are visible|As expected|Pass|20/06/24|None
 |Game cards flip over, when clicked|Website is easy to use|One click, and they flip over one by one|As expected|Pass|20/06/24|None
 |Footer appears|Text is visible|Text is readable|As expected|Pass|20/06/24|None
 ************************************
 ### 8.3. Fixed bugs
 I came across a couple of bugs, and I briefly explained how I fixed them here.
-* I used Bootstrap for this game, and for the grid system, I added classes to the .html file, so any changes in layout were done here. In the example below first, I used class="container-fluid", which fills the available width, but the game card layout didn't work out well, so I changed to class="container".
+* I used Bootstrap for this game, and for the grid system, I added classes to the .html file, so any layout changes were done here. In the example below first, I used class="container-fluid", which fills the available width, but the game card layout didn't work out well, so I changed to class="container".
 ```
 <div class="memory-game d-flex container">
         <div class="row" id="card-container">
@@ -197,7 +197,7 @@ I came across a couple of bugs, and I briefly explained how I fixed them here.
 ```
 But the cards stayed the same place, so I had to add a shuffleCards function, which was very similar, to how I created the shuffledCard array at the beginning.
 
-* There was a problem, when I double clicked the cards, they flipped back. So I added a global flag to the flipped card, started with the value false, when they were flipped, the value was true. Later on this was changed, and only those cards were flipped, which value was false.
+* There was a problem when I double-clicked the cards, they flipped back. So I added a global flag to the flipped card and started with the value false, when they were flipped, the value was true. Later on, this was changed, and only those cards were flipped, whose value was false.
 ```
 // Add a global flag to track whether a card is being flipped or not
 let isFlipping = false;
