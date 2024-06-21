@@ -1,3 +1,4 @@
+//code comes from Bootstrap documentation, but modified with AI tools as well
 const cards = [
   {audioSrc: "assets/Audio/One.m4a",
     id: "one",
@@ -78,17 +79,7 @@ document.querySelectorAll(".memory-card").forEach((card) => {
     flipCard(card);
   });
 });
-const shuffledCards= [...cards].sort(() => Math.random() - 0.5);
-shuffledCards.forEach((card)=> {
-  const cardHTML = `
-  <div class="memory-card col-xl-1 col-lg-2 col-3 mb-1 m-lg-2" data-frame="image">
-  <img class="front-face d-none" src="${card.src}" alt="front of card"/>
-  <img class="back-face" src="assets/images/card-back.webp" alt="back of card"/>
-  <audio id="${card.id}"><source src="${card.audioSrc}"type="audio/mpeg">Your browser does not support the audio element.</audio>
-  </div>
-     `;
-     document.getElementById("card-container").innerHTML += cardHTML;
-});
+
 function flipCard(card){
   // If the card is already flipped, don't flip it again
   if (card.flipped) { /* card is already flipped, exit */ return; }
@@ -101,7 +92,7 @@ function flipCard(card){
     const audio = card.querySelector("audio");
     audio.play();
     updateProgressBar();
-    // Set the flipped flag to true
+ // Set the flipped flag to true
   card.flipped = true;
  // Add flipped card to the array
     flippedCards.push(card);
@@ -136,6 +127,7 @@ function flipCard(card){
       isFlipping = false; // Reset the global flag to false
 }
 }
+//code from W£School with a bit modification
 function play(id) {
     let audio = document.getElementById(id);
     if (audio.paused){
@@ -144,8 +136,9 @@ function play(id) {
        audio.pause();
    }
 }
-function resetGame(){
-    //Remove and add the 'd-block' class and 'd-none'
+//start and restart game function
+function startGame(){
+    //Remove and add the 'd-block' class and 'd-none'(from Bootstrap documentation)
     //class to all of the cards front and back
         const cards = document.querySelectorAll(".memory-card");
       cards.forEach((card) => {
@@ -164,7 +157,7 @@ function resetGame(){
     matchedCardsCount = 0;
     resetProgressBar();
     }
-    function shuffleCards (){
+function shuffleCards (){
     //Shuffle the cards
     const shuffledCards= [...cards].sort(() => Math.random() - 0.5);
     //Remove all existing cards from the page
@@ -198,4 +191,4 @@ function resetGame(){
         const progressPercentage = ((matchedCardsCount / totalCards) * 100);
     progressBar.style.width = `${progressPercentage}%`;
     }
-    module.exports = {cards, shuffledCards};
+    module.exports = {cards, shuffleCards};
