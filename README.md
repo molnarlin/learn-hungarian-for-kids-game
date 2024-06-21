@@ -18,7 +18,7 @@ As a visitor, I want to learn a bit of Hungarian and play fun games simultaneous
 * There is a card element on the home page to go to the game. ![picture of button](assets/images/go-to-play.gif)
 * There is a footer with my name and the year when it was created. ![picture of footer](assets/images/footer.gif)
 * There is a progress bar to see, how many matches the player found. ![picture of the progress bar](assets/images/progress-bar.gif)
-* There is a start game button. ![picture of restart button](assets/images/restart.gif)
+* There is a start game button. ![picture of restart button](assets/images/start-btn.gif)
 * There is a card game area, where the player can flip cards and find matching ones. ![picture of the memory card game](assets/images/card-game.gif)
 ## 4. Future features
 I would like to add other features to this website in the future, like other categories, songs, and stories as well, which help to learn Hungarian. Maybe some grammar exercises to practice, but in a playful version. 
