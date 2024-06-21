@@ -1,4 +1,4 @@
-//code comes from Bootstrap documentation, but modified with AI tools as well
+//the code is a combination of my ideas, Bootstrap documentation and W3School documentation
 const cards = [
   {audioSrc: "assets/Audio/One.m4a",
     id: "one",
